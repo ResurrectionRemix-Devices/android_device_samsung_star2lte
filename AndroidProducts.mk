@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_star2lte.mk
+    $(LOCAL_DIR)/bliss_star2lte.mk
 
 COMMON_LUNCH_CHOICES := \
-     carbon_star2lte-userdebug \
-     carbon_star2lte-eng \
-     carbon_star2lte-user
+     bliss_star2lte-userdebug \
+     bliss_star2lte-eng \
+     bliss_star2lte-user

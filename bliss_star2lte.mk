@@ -23,12 +23,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/star2lte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Carbon stuff.
-$(call inherit-product, vendor/carbon/config/common.mk)
+#Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1440
+
+# Inherit some common Bliss stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := star2lte
-PRODUCT_NAME := carbon_star2lte
+PRODUCT_NAME := bliss_star2lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G965F
 PRODUCT_MANUFACTURER := samsung
@@ -40,5 +43,3 @@ BUILD_FINGERPRINT := samsung/star2ltexx/star2lte:10/QP1A.190711.020/G965FXXU8DTC
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=star2ltexx \
         PRIVATE_BUILD_DESC="star2ltexx-user 10 QP1A.190711.020 G965FXXU8DTC5 release-keys"
-
-export HAVOC_BUILD_TYPE=Official
