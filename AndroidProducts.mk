@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_star2lte.mk
+    $(LOCAL_DIR)/carbon_star2lte.mk
 
 COMMON_LUNCH_CHOICES := \
-     havoc_star2lte-userdebug \
-     havoc_star2lte-eng \
-     havoc_star2lte-user
+     carbon_star2lte-userdebug \
+     carbon_star2lte-eng \
+     carbon_star2lte-user

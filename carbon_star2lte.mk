@@ -23,12 +23,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/star2lte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit some common Carbon stuff.
+$(call inherit-product, vendor/carbon/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := star2lte
-PRODUCT_NAME := havoc_star2lte
+PRODUCT_NAME := carbon_star2lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G965F
 PRODUCT_MANUFACTURER := samsung
