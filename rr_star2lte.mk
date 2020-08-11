@@ -27,11 +27,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 TARGET_BOOT_ANIMATION_RES := 1440
 
 # Inherit some common Bliss stuff.
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := star2lte
-PRODUCT_NAME := bliss_star2lte
+PRODUCT_NAME := rr_star2lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G965F
 PRODUCT_MANUFACTURER := samsung
@@ -46,8 +46,8 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_PACKAGES_DEBUG := false
 PRODUCT_PACKAGES_DEBUG_ASAN := false
 
-#BLissify
-export BLISS_BUILDTYPE=OFFICIAL
+#RR
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 BUILD_FINGERPRINT := samsung/star2ltexx/star2lte:10/QP1A.190711.020/$(PRODUCT_PDA_VERSION):user/release-keys
 

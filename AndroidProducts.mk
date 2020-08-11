@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_star2lte.mk
+    $(LOCAL_DIR)/rr_star2lte.mk
 
 COMMON_LUNCH_CHOICES := \
-     bliss_star2lte-userdebug \
-     bliss_star2lte-eng \
-     bliss_star2lte-user
+     rr_star2lte-userdebug \
+     rr_star2lte-eng \
+     rr_star2lte-user
